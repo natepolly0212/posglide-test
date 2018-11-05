@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Board of Directors - Greater Lexington Chamber and Visitors Center | Lexington, SC</title>
+    </head>
+
+    <body>
+        <h1>Board of Directors</h1>
+        <h3>2017 &ndash; 2018 Chamber Board</h3>
+        <p>
+            The GLC&amp;VC Board of Directors is the legal representative of the Chamber. Its role is to strategically plan and make decisions on behalf of the
+            membership. Board members are chosen because of their interest in the Chamber of Commerce, their standing in the community and their
+            experience and ability in business.</p>
+        <h3>Executive Committee</h3>
+        <div class="list-inline ambassadors-list clearfix">
+            <div class="row">
+                <ul>
+                    {module_webapps id="42540" filter="classified" itemId="774546"}
+                </ul>
+            </div>
+        </div>
+        <h3>Board Members</h3>
+        <div class="list-inline ambassadors-list clearfix">
+            <div class="row">
+                <ul>
+                    {module_webapps id="42540" filter="classified" itemId="774545" useBackupTemplate="true"}
+                </ul>
+            </div>
+        </div>
+        <br />
+        <!--
+<h3>Ex-Officio Board Members</h3>
+<div class="list-inline ambassadors-list clearfix">
+    <div class="row">
+        <ul>
+            { module_webapps id="42540" filter="classified" itemId="774547"}
+        </ul>
+    </div>
+</div>
+-->
+        <!-- 
+{-module_categorylist id="774540" maxLevel="4" collection="boardCategoryList" template=""}
+
+{% for category in boardCategoryList.items %}
+<h3>{{category.name}}</h3>
+<div class="list-inline ambassadors-list clearfix">
+    <div class="row">
+        <ul>
+            {-module_webapps id="42540" filter="classified" itemId="{{category.id}}"}
+        </ul>
+    </div>
+</div>
+{% endfor %}
+-->
+    </body>
+
+</html>
