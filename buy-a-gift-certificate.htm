@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Buy a Gift Certificate - Greater Lexington Chamber and Visitors Center | Lexington, SC</title>
+        <meta name="robots" content="noindex" />
+    </head>
+
+    <body>
+        <h1>Buy A Gift Certificate This is the gift certificate page</h1>
+        <p>Complete the form below to have your gift certificate ready for pick up at your convenience. The Greater Lexington Chamber and Visitors Center
+            is located at 311 W. Main Street in Lexington and open 9 a.m. to 5 p.m., Monday through Thursday, and 9 a.m. to 4 p.m. on Friday. </p>
+        <p><strong>Questions about your gift certificate? </strong><a href="mailto:adam@lexingtonsc.org?subject=Gift Certificates">Contact Adam DeLoach</a>,
+            director of membership, via email or (803)359-6113 ext. 103.</p>
+        <h3>From</h3>
+        <form name="catwebformform81637" method="post" onsubmit="return checkWholeForm81637(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=813565&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" class="buy-giftcert">
+            <div class="row contactus-form">
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="First Name" type="text" name="FirstName" id="FirstName"> </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="Last Name" type="text" name="LastName" id="LastName"> </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="Amount" type="text" name="CAT_Custom_2104819" id="CAT_Custom_2104819"> </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="Email Address" type="text" name="EmailAddress" id="EmailAddress"> </div>
+            </div>
+            <h3>To</h3>
+            <div class="row contactus-form">
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="First Name" type="text" name="CAT_Custom_2104820" id="CAT_Custom_2104820"> </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="Last Name" type="text" name="CAT_Custom_2104821" id="CAT_Custom_2104821"> </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="Email Address" type="text" name="CAT_Custom_2104822" id="CAT_Custom_2104822"> </div>
+            </div>
+            <h3>Payment</h3>
+            <p>Please pay and pick up at 311 W. Main Street Lexington, SC 29072</p>
+            <div class="row contactus-form">
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="Pick Up Date" type="text" name="CAT_Custom_2104832" id="CAT_Custom_2104832" onfocus="displayDatePicker('CAT_Custom_2104832');return false;" readonly="readonly"> </div>
+                <div class="form-group col-md-4">
+                    <input class="form-control" placeholder="Contact Phone Number" type="text" name="HomePhone" id="HomePhone"> </div>
+            </div>
+            <div class="btn-full-wrap text-right col-xs-12 submit-form">
+                <div class="captcha-wrap">{module_recaptcha version="2"}</div>
+                <button class="btn btn-blue">Submit</button>
+            </div>
+            <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js?vs=b2163.r500636-phase1"></script>
+            <script type="text/javascript" src="/CatalystScripts/Java_DatePicker.js?vs=b2163.r500636-phase1"></script>
+            <script type="text/javascript">
+                //<![CDATA[
+                var submitcount81637 = 0;
+
+                function checkWholeForm81637(theForm) {
+                        var why = "";
+                        if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "From: First Name");
+                        if (theForm.LastName) why += isEmpty(theForm.LastName.value, "From: Last Name");
+                        if (theForm.CAT_Custom_2104819) why += isEmpty(theForm.CAT_Custom_2104819.value, "Amount");
+                        if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+                        if (theForm.CAT_Custom_2104820) why += isEmpty(theForm.CAT_Custom_2104820.value, "To: First Name");
+                        if (theForm.CAT_Custom_2104821) why += isEmpty(theForm.CAT_Custom_2104821.value, "To: Last Name");
+                        if (theForm.CAT_Custom_2104822) why += isEmpty(theForm.CAT_Custom_2104822.value, "To: Email Address");
+                        if (theForm.CAT_Custom_2104832) why += checkDate(theForm.CAT_Custom_2104832.value, "Pick Up Date");
+                        if (theForm.HomePhone) why += isEmpty(theForm.HomePhone.value, "Home Phone Number");
+                        if (theForm['g-recaptcha-response']) why += reCaptchaV2IsInvalid(theForm, "Please prove you're not a robot");
+                        if (why != "") {
+                            alert(why);
+                            return false;
+                        }
+                        if (submitcount81637 == 0) {
+                            submitcount81637++;
+                            theForm.submit();
+                            return false;
+                        } else {
+                            alert("Form submission is in progress.");
+                            return false;
+                        }
+                    }
+                    //]]>
+            </script>
+        </form>
+    </body>
+
+</html>
